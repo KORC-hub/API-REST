@@ -1,0 +1,15 @@
+{
+  "timeout": 5000,
+  "require": "tsx/esm",
+  "node-option": ["experimental-specifier-resolution=node"],
+  "extensions": ["ts", "tsx", "js"],
+  "spec": "test/**/*.test.ts",
+  "reporter": "mochawesome",
+  "reporter-option": [
+    "reportDir=src/api/test-report",
+    "reportFilename=report",
+    "overwrite=true",
+    "inline=true",
+    "quiet=false"
+  ]
+}
