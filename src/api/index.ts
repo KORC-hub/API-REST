@@ -1,6 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
-import items from "./items/routers.ts";
+import items from "./routes/routers.ts";
 
 const app = express();
 

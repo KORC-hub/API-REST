@@ -1,5 +1,5 @@
 import { Router } from "express";
-import response from "../utils/httpResponse.ts";
+import response from "../../utils/httpResponse.ts";
 
 const router = Router();
 
