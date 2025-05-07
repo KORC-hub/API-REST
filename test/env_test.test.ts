@@ -1,9 +1,10 @@
-import assert from "assert";
-import { test, describe, it } from "node:test";
-import { tiMonth, fuelEnergySelector } from "../calculations/environment.ts";
+import assert from "node:assert";
+import { tiMonth, fuelEnergySelector } from "../src/calculations/environment.ts";
 
-test("env_ipc", () => {
-  assert.strictEqual(tiMonth(1.4), 5);
+describe("tiMonth test", () => {
+  it("case 1", () => {
+    assert.strictEqual(tiMonth(1.4), 5);
+  });
 });
 
 describe("fuelEnergySelector test collection", () => {
