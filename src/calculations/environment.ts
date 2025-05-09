@@ -6,7 +6,7 @@ const tiMonth = (ipc: number): number => {
   return ti;
 };
 
-const fuelEnergySelector = (data: string): FuelInfo | string => {
+const fuelEnergySelector = (data: string): FuelInfo => {
   let fuel_info: FuelInfo = {
     fuel_price: 0,
     fuel_energy: 0,
@@ -29,7 +29,7 @@ const fuelEnergySelector = (data: string): FuelInfo | string => {
     return fuel_info;
   }
 
-  return "Tipo de combustible no valido";
+  throw new Error("Tipo de combustible no valido");
 };
 
 //  kWh/km
