@@ -1,18 +1,21 @@
 import { assert, expect } from "chai";
 import { describe, it } from "mocha";
 import {
-  tiMonth,
   fuelEnergySelector,
   electricalConsumption,
   costElectricalKM,
   combustionConsumption,
   fuelConsumption,
 } from "../src/calculations/environment.ts";
+import CalculateCircleArea from "../src/calculations/circleArea.ts";
 import type { FuelInfo } from "../src/types/environmentTypes.ts";
 
-describe("tiMonth test", () => {
-  it("case 1", () => {
-    expect(tiMonth(1.4)).to.equal(5);
+describe("CalculateCircleArea collection", () => {
+  it("successful test", () => {
+    assert.strictEqual(CalculateCircleArea(5), 78.53981633974483);
+  });
+  it("fail test", () => {
+    assert.strictEqual(CalculateCircleArea(5), 5);
   });
 });
 
